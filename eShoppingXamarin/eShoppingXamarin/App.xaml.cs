@@ -1,4 +1,6 @@
-﻿using Prism;
+﻿using eShopping.Models;
+using eShoppingXamarin.ViewModels;
+using Prism;
 using Prism.Ioc;
 using Prism.Unity;
 using System;
@@ -10,14 +12,15 @@ namespace eShoppingXamarin
     public partial class App : PrismApplication
     {
         public App(IPlatformInitializer platformInitializer = null) : base(platformInitializer) { }
-        protected override void OnInitialized()
+        protected override async void OnInitialized()
         {
             InitializeComponent();
+            await NavigationService.NavigateAsync("NavigationPage/Language");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            throw new NotImplementedException();
+            containerRegistry.RegisterForNavigation<Language, LanguageViewModel>();
         }
        
     }

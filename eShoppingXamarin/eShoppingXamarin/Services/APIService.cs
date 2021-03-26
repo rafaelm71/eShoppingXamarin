@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using eShoppingXamarin.Models;
+
 using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
+using eShopping.Models;
 
 namespace eShoppingXamarin.Services
 {

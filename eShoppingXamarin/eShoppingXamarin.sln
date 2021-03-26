@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShoppingXamarin.Android", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShoppingXamarin.iOS", "eShoppingXamarin.iOS\eShoppingXamarin.iOS.csproj", "{3D3489B4-C128-44FA-B64B-CB8715DCEDF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShoppingXamarin", "eShoppingXamarin\eShoppingXamarin.csproj", "{05FDC7BA-259F-4DC9-B6D4-6CD92CD2577C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShoppingXamarin", "eShoppingXamarin\eShoppingXamarin.csproj", "{05FDC7BA-259F-4DC9-B6D4-6CD92CD2577C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

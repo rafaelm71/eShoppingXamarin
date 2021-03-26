@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows.Input;
-using eShoppingXamarin.Models;
+using eShopping.Models;
 using eShoppingXamarin.Services;
 using Xamarin.Essentials;
 using Xamarin.Forms;

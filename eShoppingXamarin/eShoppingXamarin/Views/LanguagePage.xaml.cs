@@ -18,5 +18,10 @@ namespace eShoppingXamarin
             BindingContext = new LanguageViewModel(new AlertService());
 
         }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
