@@ -20,7 +20,8 @@ namespace eShoppingXamarin
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<Language, LanguageViewModel>();
+            
+            containerRegistry.RegisterForNavigation<LanguagePage, LanguageViewModel>();
         }
        
     }

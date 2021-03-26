@@ -4,6 +4,6 @@
              x:Class="eShoppingXamarin.App"
              xmlns:prism="http://prismlibrary.com">
     <prism:PrismApplication.Resources>
-
+       
     </prism:PrismApplication.Resources>
 </prism:PrismApplication>

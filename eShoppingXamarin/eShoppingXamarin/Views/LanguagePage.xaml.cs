@@ -15,7 +15,7 @@ namespace eShoppingXamarin
         public LanguagePage()
         {
             InitializeComponent();
-            BindingContext = new LanguageViewModel(new AlertService());
+           
 
         }
 
