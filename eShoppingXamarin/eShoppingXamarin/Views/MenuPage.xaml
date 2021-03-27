@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eShoppingXamarin.Views.MenuPage">
+    
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Button Text="More Products" Command="{Binding ShowProductCommand}" CommandParameter="NavigationPage/ProductPage"/>
+        <Button Text="Option 2"/>
+    </StackLayout> 
+</ContentPage>

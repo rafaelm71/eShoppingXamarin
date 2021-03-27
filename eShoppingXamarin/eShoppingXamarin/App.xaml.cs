@@ -1,5 +1,6 @@
 ﻿using eShopping.Models;
 using eShoppingXamarin.ViewModels;
+using eShoppingXamarin.Views;
 using Prism;
 using Prism.Ioc;
 using Prism.Unity;
@@ -15,13 +16,15 @@ namespace eShoppingXamarin
         protected override async void OnInitialized()
         {
             InitializeComponent();
-            await NavigationService.NavigateAsync("NavigationPage/Language");
+            await NavigationService.NavigateAsync("MenuMasterDetailPage/NavigationPage/HomePage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            
-            containerRegistry.RegisterForNavigation<LanguagePage, LanguageViewModel>();
+            containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<MenuMasterDetailPage, HomeViewModel>();
+            containerRegistry.RegisterForNavigation<HomePage, HomeViewModel>();
+            containerRegistry.RegisterForNavigation<ProductPage>();
         }
        
     }
