@@ -11,7 +11,7 @@ namespace eShoppingXamarin.Models
     public class Name
     {
 
-        public class IngredientTag
+        public class Tags
         {
 
             [JsonPropertyName("name")]
@@ -37,7 +37,7 @@ namespace eShoppingXamarin.Models
             public int Count { get; set; }
 
             [JsonPropertyName("tags")]
-            public ObservableCollection<IngredientTag> Tags { get; set; }
+            public ObservableCollection<Tags> Tags { get; set; }
          
 
         }

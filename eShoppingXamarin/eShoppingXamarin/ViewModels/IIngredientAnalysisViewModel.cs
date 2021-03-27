@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
-
+using eShoppingXamarin.Models;
 
 
 namespace ApiXamarin.ViewModels
