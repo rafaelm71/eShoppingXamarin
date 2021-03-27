@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using eShoppingXamarin.Services;
 using System.ComponentModel;
+using Prism.Navigation;
 
 namespace eShoppingXamarin.ViewModels
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public abstract class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected IAlertService AlertService { get; }
@@ -14,5 +15,17 @@ namespace eShoppingXamarin.ViewModels
         {
             AlertService = alertService;
         }
+
+        public abstract string Title { get; }
+       
+
+        protected INavigationService NavigationService { get; }
+
+        protected BaseViewModel(INavigationService navigationService)
+        {
+            NavigationService = navigationService;
+        }
+
+
     }
 }

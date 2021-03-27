@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace eShoppingXamarin.ViewModels
 {
-    public class LanguageViewModel : BaseViewModel
+    public abstract class LanguageViewModel : BaseViewModel
     {
         public ObservableCollection<Tag> TagList { get; set; }
         public ICommand GetList { get; }
