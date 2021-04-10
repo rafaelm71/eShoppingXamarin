@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace eShoppingXamarin.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : MasterDetailPage
+    public partial class MasterDetailPage1 : MasterDetailPage
     {
-        public HomePage()
+        public MasterDetailPage1()
         {
             InitializeComponent();
             MasterPage.ListView.ItemSelected += ListView_ItemSelected;
@@ -20,7 +20,7 @@ namespace eShoppingXamarin.Views
 
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var item = e.SelectedItem as HomePageMasterMenuItem;
+            var item = e.SelectedItem as MasterDetailPage1MasterMenuItem;
             if (item == null)
                 return;
 
