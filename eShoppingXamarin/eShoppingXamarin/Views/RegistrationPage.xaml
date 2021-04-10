@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eShoppingXamarin.Views.RegistrationPage"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout
+            VerticalOptions="Center"
+            Padding="20"
+            >
+            <Image
+                Source="shoppingcart.jpg"
+                WidthRequest="150"
+                HeightRequest="150" 
+             />
+            <Label/>
+            <Entry
+                x:Name="email"
+                Placeholder="Email" 
+             />
+            <Entry 
+                x:Name="name"
+                Placeholder="Name" 
+             />
+            <Entry 
+                x:Name="password"
+                Placeholder="Password" 
+                IsPassword="True"
+             />
+            <Entry 
+                x:Name="passwordConfirm"
+                Placeholder="Confirm Password" 
+                IsPassword="True" 
+             />
+
+            <Button 
+                Text="Register" 
+                TextColor="Black"  
+                BackgroundColor="LightGray" 
+                Clicked="ButtonClicked"
+                FontSize="18"
+             />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
